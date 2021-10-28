@@ -21,21 +21,21 @@ var Emitter = require('events');
 //Database connection
 
 //Connection to users database
-var connU = mongoose.createConnection('mongodb+srv://tony:trfood13@cluster0.asvuk.mongodb.net/Users?retryWrites=true&w=majority', {
+var connU = mongoose.createConnection('Database', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
 });
 
 //Connection to food products database (Every delivery)
-var connP = mongoose.createConnection('mongodb+srv://tony:trfood13@cluster0.asvuk.mongodb.net/Products?retryWrites=true&w=majority', {
+var connP = mongoose.createConnection('Database', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
 });
 
 //Coonnection to food database (A global existing food)
-var connC = mongoose.createConnection('mongodb+srv://tony:trfood13@cluster0.asvuk.mongodb.net/Food?retryWrites=true&w=majority', {
+var connC = mongoose.createConnection('Database', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
